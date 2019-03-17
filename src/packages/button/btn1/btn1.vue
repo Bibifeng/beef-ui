@@ -1,11 +1,14 @@
 <template>
-      <a href="#" class="button"  id="btn1">
-        <span class="line line-top"></span>
-        <span class="line line-right"></span>
-        <span class="line line-bottom"></span>
-        <span class="line line-left"></span>
-        {{ btn1Msg }}
+  <div class="wrapper">
+    <a href="#" class="button"  id="btn1">
+      <span class="line line-top"></span>
+      <span class="line line-right"></span>
+      <span class="line line-bottom"></span>
+      <span class="line line-left"></span>
+      {{ btn1Msg }}
       </a>
+  </div>
+
 </template>
 
 <script>
@@ -31,6 +34,11 @@
 </script>
 
 <style lang="scss" scoped>
+
+  .wrapper{
+    display: inline-block;
+  }
+
   .button{
     display: block;
     position: relative;

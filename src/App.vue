@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <p>带线条效果的btn1</p>
-    <bf-btn1></bf-btn1>
+    <div class="box">
+      <bf-btn1></bf-btn1>
+    </div>
   </div>
 </template>
 
@@ -13,7 +14,7 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+
     }
   },
   components:{
@@ -23,8 +24,15 @@ export default {
 </script>
 
 <style lang="scss">
-#app{
+
+  /*为了开发方便，后期酌情删除*/
+  #app{
   margin-left: 150px;
-  margin-top: 150px;
-}
+  margin-top: 50px;
+  }
+  .box{
+    margin-top: 20px;
+  }
+  /*  ------结束-------- */
+
 </style>
