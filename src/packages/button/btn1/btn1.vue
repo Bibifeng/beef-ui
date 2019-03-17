@@ -13,7 +13,7 @@
 
 <script>
     export default {
-        name: 'bf-btn1',
+        name: 'bf-btn-line',
         data(){
             return {
 
