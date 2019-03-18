@@ -10,6 +10,11 @@
       <bf-btn icon="settings" :loading="true">按钮二</bf-btn>
       <bf-btn icon="like" icon-position="right">按钮二</bf-btn>
       <bf-btn icon="like" icon-position="right" :loading="true">按钮二</bf-btn>
+      <bf-btn-group>
+        <bf-btn icon-position="left" icon="left">上一页</bf-btn>
+        <bf-btn>更多</bf-btn>
+        <bf-btn icon-position="right" icon="right">下一页</bf-btn>
+      </bf-btn-group>
     </div>
     <div class="box">
       <bf-icon icon-name="download"></bf-icon>
@@ -22,6 +27,7 @@
   import btn1 from './packages/button/btn1/btn1.vue'
   import btn2 from './packages/button/btn2/btn2.vue'
   import bfIcon from './packages/icon/bficon.vue'
+  import bfBtnGroup from './packages/button/btn-group/btn-group.vue'
 export default {
   name: 'app',
   data () {
@@ -33,6 +39,7 @@ export default {
       'bf-btn-line': btn1,
       'bf-btn': btn2,
     'bf-icon': bfIcon,
+    'bf-btn-group': bfBtnGroup,
   }
 }
 </script>
