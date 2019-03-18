@@ -1,5 +1,5 @@
 <template>
-    <button class="bf-btn" :class="{[`icon-${iconPosition}`]: true}">
+    <button class="bf-btn" :class="{[`icon-${iconPosition}`]: true}" @click="btn2ClickTrigger">
       <bf-icon v-if="icon && !loading" :icon-name="icon" class="bficon"></bf-icon>
       <bf-icon v-if="loading" class="loading bficon" icon-name="loading"></bf-icon>
       <div class="slot-wrapper"><slot></slot></div>
@@ -33,6 +33,11 @@
         },
         components:{
             'bf-icon':bfIcon,
+        },
+        methods:{
+          btn2ClickTrigger(){
+              this.$emit('click');
+          }
         }
     }
 </script>

@@ -5,7 +5,7 @@
     </div>
     <div class="box">
       <bf-btn>按钮二</bf-btn>
-      <bf-btn :loading="true">按钮二</bf-btn>
+      <bf-btn :loading="loading1" @click="loading1 = !loading1">按钮二</bf-btn>
       <bf-btn icon="settings">按钮二</bf-btn>
       <bf-btn icon="settings" :loading="true">按钮二</bf-btn>
       <bf-btn icon="like" icon-position="right">按钮二</bf-btn>
@@ -26,7 +26,7 @@ export default {
   name: 'app',
   data () {
     return {
-
+        'loading1':false,
     }
   },
   components:{
