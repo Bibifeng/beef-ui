@@ -9,6 +9,14 @@
         name: 'bf-btn-group',
         data(){
             return {}
+        },
+        mounted(){
+          for( let node of this.$el.children){
+              let name = node.nodeName.toLowerCase();
+            if(name !== 'button'){
+                console.warn(`bf-btn-group的子元素应该是bf-btn,您写的${name}不应该出现在该位置`)
+            }
+          }
         }
     }
 </script>
