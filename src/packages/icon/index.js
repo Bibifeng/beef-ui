@@ -1,3 +1,3 @@
-/**
- * Created by PC on 2019/3/17.
- */
+import bfIcon from './bficon.vue';
+bfIcon.install = Vue => Vue.component(bfIcon.name,bfIcon);
+export default bfIcon;
