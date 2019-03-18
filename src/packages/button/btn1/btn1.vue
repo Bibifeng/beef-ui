@@ -21,7 +21,7 @@
         },
       props:{
         btn1Msg:{
-            default: '按钮1'
+            default: '线性按钮一'
         }
       },
       methods:{
