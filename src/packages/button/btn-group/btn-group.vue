@@ -21,7 +21,7 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .bf-btn-group{
     display: inline-flex;
     vertical-align: middle;

@@ -19,6 +19,9 @@
     <div class="box">
       <bf-icon icon-name="download"></bf-icon>
     </div>
+    <div class="box">
+      <bf-input></bf-input>
+    </div>
   </div>
 </template>
 
@@ -28,6 +31,7 @@
   import btn2 from './packages/button/btn2/btn2.vue'
   import bfIcon from './packages/icon/bficon.vue'
   import bfBtnGroup from './packages/button/btn-group/btn-group.vue'
+  import bfInput from './packages/input/bf-input.vue'
 export default {
   name: 'app',
   data () {
@@ -40,6 +44,7 @@ export default {
       'bf-btn': btn2,
     'bf-icon': bfIcon,
     'bf-btn-group': bfBtnGroup,
+    'bf-input': bfInput,
   }
 }
 </script>
