@@ -20,7 +20,11 @@
       <bf-icon icon-name="download"></bf-icon>
     </div>
     <div class="box">
-      <bf-input></bf-input>
+      <bf-input value="张三"></bf-input>
+      <bf-input value="李四" :disabled="true"></bf-input>
+    </div>
+    <div class="box">
+      <bf-input value="错误示范" error="出错啦！"></bf-input>
     </div>
   </div>
 </template>

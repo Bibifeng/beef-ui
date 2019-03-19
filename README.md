@@ -11,7 +11,7 @@
 ```
 2. 添加iconfont链接
 ```
-<script src="//at.alicdn.com/t/font_1092490_aed3utctfl.js"></script>
+<script src="//at.alicdn.com/t/font_1092490_1oa4felgew8.js"></script>
 ```
 
 如遇样式出问题，请检查您的项目是否可以正常使用scss
