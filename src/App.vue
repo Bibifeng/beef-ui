@@ -1,5 +1,32 @@
 <template>
   <div id="app">
+
+    <bf-row>
+      <bf-col span="2">1</bf-col>
+      <bf-col span="22">2</bf-col>
+    </bf-row>
+    <bf-row>
+      <bf-col span="3">1</bf-col>
+      <bf-col span="14">2</bf-col>
+      <bf-col span="7">2</bf-col>
+    </bf-row>
+    <bf-row>
+      <bf-col>1</bf-col>
+      <bf-col>2</bf-col>
+      <bf-col>2</bf-col>
+      <bf-col>2</bf-col>
+    </bf-row>
+    <bf-row>
+      <bf-col span="3">1</bf-col>
+      <bf-col span="10" offset="4">2</bf-col>
+      <bf-col span="7">2</bf-col>
+    </bf-row>
+    <bf-row>
+      <bf-col span="3" offset="6">1</bf-col>
+      <bf-col span="2" offset="4">2</bf-col>
+      <bf-col span="4" offset="3">2</bf-col>
+    </bf-row>
+
     <div class="box">
       <bf-btn-line></bf-btn-line>
     </div>
@@ -39,6 +66,8 @@
   import bfIcon from './packages/icon/bficon.vue'
   import bfBtnGroup from './packages/button/btn-group/btn-group.vue'
   import bfInput from './packages/input/bf-input.vue'
+  import bfRow from './packages/grid/bf-row.vue'
+  import bfCol from './packages/grid/bf-col.vue'
 export default {
   name: 'app',
   data () {
@@ -52,6 +81,8 @@ export default {
     'bf-icon': bfIcon,
     'bf-btn-group': bfBtnGroup,
     'bf-input': bfInput,
+    'bf-row': bfRow,
+    'bf-col': bfCol,
   },
   methods:{
     inputChange(val){
