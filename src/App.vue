@@ -1,17 +1,24 @@
 <template>
   <div id="app">
+    <div style="border:1px solid black;">
 
-    <bf-row>
+    <bf-row gutter="20">
       <bf-col span="2">1</bf-col>
       <bf-col span="22">2</bf-col>
     </bf-row>
-    <bf-row>
+    <bf-row gutter="20">
       <bf-col span="3">1</bf-col>
-      <bf-col span="14">2</bf-col>
+      <bf-col span="14">
+        <bf-row gutter="10">
+          <bf-col>5</bf-col>
+          <bf-col>5</bf-col>
+          <bf-col>5</bf-col>
+        </bf-row>
+      </bf-col>
       <bf-col span="7">2</bf-col>
     </bf-row>
-    <bf-row>
-      <bf-col>1</bf-col>
+    <bf-row gutter="20">
+      <bf-col>1111111111111</bf-col>
       <bf-col>2</bf-col>
       <bf-col>2</bf-col>
       <bf-col>2</bf-col>
@@ -22,10 +29,11 @@
       <bf-col span="7">2</bf-col>
     </bf-row>
     <bf-row>
-      <bf-col span="3" offset="6">1</bf-col>
-      <bf-col span="2" offset="4">2</bf-col>
-      <bf-col span="4" offset="3">2</bf-col>
+      <bf-col span="3">1</bf-col>
+      <bf-col span="6" offset="4">2</bf-col>
+      <bf-col span="8" offset="3">2</bf-col>
     </bf-row>
+    </div>
 
     <div class="box">
       <bf-btn-line></bf-btn-line>

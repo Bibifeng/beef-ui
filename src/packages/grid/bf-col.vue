@@ -1,6 +1,6 @@
 <template>
-  <div class="col" :class="[`col-${span}`, offset && `offset-${offset}`]">
-    <slot></slot>
+  <div class="col" :class="colClasses" :style="colStyle">
+      <slot></slot>
   </div>
 </template>
 
@@ -8,7 +8,9 @@
   export default {
     name: 'bf-col',
     data(){
-      return {}
+      return {
+          gutter: 0,
+      }
     },
     props: {
       span: {
@@ -17,17 +19,24 @@
       offset: {
         type: [Number, String]
       }
+    },
+    computed:{
+        colClasses(){
+            let {span,offset} = this
+            return [span && `col-${span}`, offset && `offset-${offset}`]
+      },
+        colStyle(){
+            return {
+              paddingLeft: this.gutter/2+'px',
+              paddingRight: this.gutter/2+'px'
+            }
+      }
     }
   }
 </script>
 
 <style lang="scss" scoped>
   .col {
-    height: 100px;
-    background: gray;
-    width: 50%;
-    border: 1px solid red;
-
     $class-prefix: col-;
     @for $n from 1 through 24 {
       &.#{$class-prefix}#{$n} {
