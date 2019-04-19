@@ -53,6 +53,11 @@
     </div>
     <div class="box">
       <bf-icon icon-name="download"></bf-icon>
+      <bf-icon icon-name="user"></bf-icon>
+      <bf-icon icon-name="delete"></bf-icon>
+      <bf-icon icon-name="form"></bf-icon>
+      <bf-icon icon-name="bianji"></bf-icon>
+      <bf-icon icon-name="info"></bf-icon>
     </div>
     <div class="box">
       <bf-input></bf-input>
@@ -63,6 +68,57 @@
     </div>
     <div class="box">
       <bf-input @change="inputChange"></bf-input>
+    </div>
+    <div class="box">
+      <bf-tabs selected="1">
+        <bf-tabs-head>
+          <bf-tabs-item name="1">1</bf-tabs-item>
+          <bf-tabs-item name="2">2</bf-tabs-item>
+        </bf-tabs-head>
+          <bf-tabs-body>
+            <bf-tabs-pane name="1">content 1</bf-tabs-pane>
+            <bf-tabs-pane name="2">content 2</bf-tabs-pane>
+          </bf-tabs-body>
+      </bf-tabs>
+    </div>
+    <div class="box">
+      <bf-popover>
+        <bf-btn>上方弹出</bf-btn>
+        <template slot="content"> 弹出内容</template>
+      </bf-popover>
+      <bf-popover position="bottom">
+        <bf-btn>下方弹出</bf-btn>
+        <template slot="content"> 弹出内容</template>
+      </bf-popover>
+      <bf-popover position="left">
+        <bf-btn>左边弹出</bf-btn>
+        <template slot="content"> 弹出内容</template>
+      </bf-popover>
+      <bf-popover position="right">
+        <bf-btn>右边弹出</bf-btn>
+        <template slot="content"> 弹出内容</template>
+      </bf-popover>
+    </div>
+    <div class="box">
+      <bf-popover trigger="hover">
+        <bf-btn>上方弹出</bf-btn>
+        <template slot="content"> 弹出内容</template>
+      </bf-popover>
+
+      <bf-popover position="bottom" trigger="hover">
+        <bf-btn>下方弹出</bf-btn>
+        <template slot="content"> 弹出内容</template>
+      </bf-popover>
+
+      <bf-popover position="left" trigger="hover">
+        <bf-btn>左边弹出</bf-btn>
+        <template slot="content"> 弹出内容</template>
+      </bf-popover>
+
+      <bf-popover position="right" trigger="hover">
+        <bf-btn>右边弹出</bf-btn>
+        <template slot="content"> 弹出内容</template>
+      </bf-popover>
     </div>
   </div>
 </template>
@@ -76,6 +132,12 @@
   import bfInput from './packages/input/bf-input.vue'
   import bfRow from './packages/grid/bf-row.vue'
   import bfCol from './packages/grid/bf-col.vue'
+  import bfTabs from './packages/tabs/bf-tabs.vue'
+  import bfTabsBody from './packages/tabs/bf-tabs-body.vue'
+  import bfTabsHead from './packages/tabs/bf-tabs-head.vue'
+  import bfTabsItem from './packages/tabs/bf-tabs-item.vue'
+  import bfTabsPane from './packages/tabs/bf-tabs-pane.vue'
+  import bfPopover from  './packages/popover/bf-popover.vue'
 export default {
   name: 'app',
   data () {
@@ -84,13 +146,19 @@ export default {
     }
   },
   components:{
-      'bf-btn-line': btn1,
-      'bf-btn': btn2,
+    'bf-btn-line': btn1,
+    'bf-btn': btn2,
     'bf-icon': bfIcon,
     'bf-btn-group': bfBtnGroup,
     'bf-input': bfInput,
     'bf-row': bfRow,
     'bf-col': bfCol,
+    'bf-tabs':bfTabs,
+    'bf-tabs-body':bfTabsBody,
+    'bf-tabs-head':bfTabsHead,
+    'bf-tabs-item':bfTabsItem,
+    'bf-tabs-pane':bfTabsPane,
+    'bf-popover':bfPopover
   },
   methods:{
     inputChange(val){
