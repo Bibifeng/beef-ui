@@ -39,7 +39,7 @@
       <bf-btn-line></bf-btn-line>
     </div>
     <div class="box">
-      <bf-btn>按钮二</bf-btn>
+      <bf-btn>常规按钮</bf-btn>
       <bf-btn :loading="loading1" @click="loading1 = !loading1">按钮二</bf-btn>
       <bf-btn icon="settings">按钮二</bf-btn>
       <bf-btn icon="settings" :loading="true">按钮二</bf-btn>
